@@ -1,4 +1,4 @@
-# project-issue-tracker
+# Project Issue Tracker
 A Project Management App intended for internal use within an organization. Users can create projects, manage team members, and create and track tickets and tasks on specific projects they are working on. Users are provided with real time data on the status of their projects. 
 
 This project is built with React in the front-end and ruby on rails in the back-end. PostgreSQL is used as database to persist all data. Among other tech stacks used are material ui, storybook, reactstrap, react-router, chartjs-2, react-slack-chat.
