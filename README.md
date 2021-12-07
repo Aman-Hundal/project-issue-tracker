@@ -1,21 +1,27 @@
 # project-issue-tracker
-A project management utility intended for internal use within an organization. Users can create projects and assign/manage team members as well as create and track tickets and issues on the specific project they are working on. 
+A Project Management App intended for internal use within an organization. Users can create projects, manage team members, and create and track tickets and tasks on specific projects they are working on. Users are provided with real time data on the status of their projects. 
 
-
-This project is built with react in the front-end and ruby on rails in the back-end. PostgreSQL is used as database to persist all data. Among other tech stacks used are material ui, storybook, reactstrap, react-router, chartjs-2, react-slack-chat.
+This project is built with React in the front-end and ruby on rails in the back-end. PostgreSQL is used as database to persist all data. Among other tech stacks used are material ui, storybook, reactstrap, react-router, chartjs-2, react-slack-chat.
 
 ## Setup
 
-Install fron-end dependencies with `npm install`(inside the client folder)
-Install back-end dependencies with `bundle install`, (inside the backend folder)
+1. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
+2. Install fron-end dependencies with `npm install` (inside the client folder)
+3. Install back-end dependencies with `bundle install` (inside the backend folder)
+4. Run rake db:migrate and rake db:seed to setup database with Rails
 
-get a webhook key from slack by creating a workspace and put inside a .env file based on the .env_example provided
-
+Finally, retrieve a webhook key from slack by creating a workspace and put inside a .env file based on the .env_example provided.
 
 ## Running Webpack Development Server
 
 ```sh
 npm start
+```
+
+## Running Rails Server
+
+```sh
+rails s
 ```
 
 ## Running Jest Test Framework
